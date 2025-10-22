@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.miele-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBF7E3;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    overflow: hidden;
+    width: 320px;
+    
+}
+.immagine-jar {
+    width: 100%;
+    height: auto;
+
+}
+.miele-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+}
+.miele-titolo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.miele-titolo h2 {
+    font-size: 1.2em;
+    color: #612406;
+}
+.prezzo  {
+    font-weight: bold;
+    color: #612406;
+}
+.descrizione {
+    
+    color:#612406;
+    font-size: 0.9em;
+}
+.add-to-card {
+    background-color: #F3DF85;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .miele-img  {
+        flex-direction: row;
+        width: 500px;
+    }
+    .immagine-jar {
+        width: 50%;
+        border-right: 3px solid #F3DF85;
+        border-bottom: none;
+    }
+    .miele-info {
+        width: 50%;
+        justify-content: center;
+    }
+}
+@media (min-width: 769px) {
+    .miele-img {
+        width: 600px;
+        flex-direction: row;
+    }
+    .immagine-jar {
+    width: 50%;
+    border-right: 3px solid #F3DF85;
+    border-bottom: none;
+    }
+    .miele-info {
+width: 50%;
+justify-content: center;
+}
+.miele-titolo h2 {
+    font-size: 1.4em;
+}
+}
